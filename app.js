@@ -1,3 +1,16 @@
+const messages = [
+    {
+      text: "Hi there!",
+      user: "Amando",
+      added: new Date()
+    },
+    {
+      text: "Hello World!",
+      user: "Charles",
+      added: new Date()
+    }
+];
+  
 const express = require('express')
 const path = require("node:path");
 
@@ -8,7 +21,7 @@ const publicDir = path.join(__dirname, 'public')
 app.use(express.static(publicDir))
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', { messages: messages })
 })
 
 const PORT = 3000

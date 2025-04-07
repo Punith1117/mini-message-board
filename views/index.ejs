@@ -7,6 +7,18 @@
     <title>Index</title>
 </head>
 <body>
-    Sample text
+    <h1>Messages</h1>
+    <section>
+        <% messages.forEach(message => { %>
+            <div>
+                <%= message.text %>
+                <div>
+                    <%= message.user %>
+                    <%= message.added %>
+                </div>
+            </div>
+        <% }) %>
+
+    </section>
 </body>
 </html>
