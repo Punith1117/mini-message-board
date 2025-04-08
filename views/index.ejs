@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/index.css">
     <title>Index</title>
 </head>
 <body>
     <h1>Messages</h1>
     <section>
         <% messages.forEach(message => { %>
-            <div>
+            <div class="message">
                 <%= message.text %>
-                <div>
+                <div class="message-details">
                     <%= message.user %>
                     <%= message.added %>
                 </div>
