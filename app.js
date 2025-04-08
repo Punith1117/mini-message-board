@@ -19,7 +19,12 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 const publicDir = path.join(__dirname, 'public')
 app.use(express.static(publicDir))
+app.use(express.urlencoded({extended: true}))
 
+app.post('/new', (req, res) => {
+  messages.push({ text: req.body.message, user: req.body.user, added: new Date()})
+  res.redirect('/')
+})
 app.get('/new', (req, res) => {
   res.render('new')
 })
