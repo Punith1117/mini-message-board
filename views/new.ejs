@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New message</title>
+</head>
+<body>
+    <section class="send-message-container">
+        <h1>New Message</h1>
+        <form action="/new" method="POST">
+            <label>
+                Message:
+                <textarea name="message"></textarea>
+            </label>
+            <label>
+                Your name:
+                <input type="text" name="user">
+            </label>
+            <a href="/">Back</a>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>

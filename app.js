@@ -20,6 +20,9 @@ app.set("view engine", "ejs");
 const publicDir = path.join(__dirname, 'public')
 app.use(express.static(publicDir))
 
+app.get('/new', (req, res) => {
+  res.render('new')
+})
 app.get('/', (req, res) => {
     res.render('index', { messages: messages })
 })
