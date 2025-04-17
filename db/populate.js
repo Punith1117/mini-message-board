@@ -19,7 +19,7 @@ VALUES
 async function main() {
   console.log("seeding...");
   const client = new Client({
-    connectionString: process.env.EXTERNAL_DATABASE_URL,
+    connectionString: process.env.INTERNAL_DATABASE_URL,
   });
   await client.connect();
   await client.query(SQL);
