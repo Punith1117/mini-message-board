@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "populate": "node db/populate.js",
     "start": "node app.js"
   },
   "dependencies": {
