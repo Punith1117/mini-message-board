@@ -8,3 +8,5 @@ Project19 in The Odin Project
 - Add static assets like css styles, images etc
 - Configure express to set view engine to use ejs
 - Parse form data into object using express' urlencoded() and use the sent data as req.body.elementName
+- Use Postgresql to store the messages for data persistence
+- Use environment variables instead of hardcoding sensitive details
